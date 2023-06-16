@@ -1,11 +1,4 @@
-st digit of %02d is %d and is less than 6 and not 0\n", i, i % 10);
-				printf("Last digit of %02d is %d and is less than 6 and not 0\n", j, j % 10);
-
-								putchar((i / 10) + 48);
-												putchar((i % 10) + 48);
-																putchar(' ');
-																				putchar((j / 10) + 48);
-																							#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - prints all possible combinations of two two-digit numbers
@@ -21,13 +14,18 @@ int main(void)
 		{
 			if (i < j)
 			{
-				printf("La	putchar((j % 10) + 48);
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
 				if (i != 98 || j != 99)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
+
 		}
 	}
 	putchar('\n');
