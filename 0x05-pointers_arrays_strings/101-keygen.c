@@ -12,7 +12,7 @@
 int main(void)
 {
 	int pass[15];
-	int i, sum, n;
+	int i, sum;
 
 	sum = 0;
 
@@ -36,3 +36,4 @@ int main(void)
 
 	return (0);
 }
+
