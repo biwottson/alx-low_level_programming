@@ -22,18 +22,18 @@ int main(void)
 	{
 		pass[i] = rand() % 78;
 		sum += pass[i];
-		putchar(pass[i] + '0');
+		putchar(pass[i] + 33);
 	}
 
 	pass[14] = 2772 - sum;
 	sum += pass[14];
-	putchar(pass[14] + '0');
+	putchar(pass[14] + 33);
+	putchar('\n');
 
 	if (sum == 2772)
-		printf("\nTada! Congrats\n");
+		printf("Tada! Congrats\n");
 	else
-		printf("\nWrong password\n");
+		printf("Wrong password\n");
 
 	return (0);
 }
-
