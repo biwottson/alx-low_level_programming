@@ -11,30 +11,28 @@
  */
 int main(void)
 {
-	char password[15];
+	int pass[15];
 	int i, sum, n;
 
 	sum = 0;
+
 	srand(time(NULL));
 
 	for (i = 0; i < 14; i++)
 	{
-		password[i] = 33 + rand() % 94;
-		sum += password[i];
-		putchar(password[i]);
+		pass[i] = rand() % 78;
+		sum += pass[i];
+		putchar(pass[i] + '0');
 	}
 
-	password[14] = 2772 - sum;
-	sum += password[14];
-	putchar(password[14]);
+	pass[14] = 2772 - sum;
+	sum += pass[14];
+	putchar(pass[14] + '0');
 
-	password[15] = '\0';
-
-	if (strcmp(password, "Tada! Congrats") == 0)
-		printf("\nPassword cracked successfully!\n");
+	if (sum == 2772)
+		printf("\nTada! Congrats\n");
 	else
 		printf("\nWrong password\n");
 
 	return (0);
 }
-
