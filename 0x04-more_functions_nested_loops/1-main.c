@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code
@@ -8,11 +8,15 @@
  */
 int main(void)
 {
-    char c;
-
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
+    print_binary(0);
+    printf("\n");
+    print_binary(1);
+    printf("\n");
+    print_binary(98);
+    printf("\n");
+    print_binary(1024);
+    printf("\n");
+    print_binary((1 << 10) + 1);
+    printf("\n");
     return (0);
 }
